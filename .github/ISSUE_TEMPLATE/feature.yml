@@ -1,0 +1,55 @@
+name: Featureanfrage
+description: Fordern Sie eine neue Funktion oder Verbesserung an.
+title: "[Feature]: "
+labels: ["feature"]
+assignees:
+  - njarowsky
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Vielen Dank, dass Sie eine neue Funktion vorschlagen!
+  - type: input
+    id: contact
+    attributes:
+      label: Kontaktinformationen
+      description: Wie können wir Sie erreichen, falls wir weitere Informationen benötigen?
+      placeholder: z. B. email@beispiel.de
+    validations:
+      required: false
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Funktionsbeschreibung
+      description: Beschreiben Sie die gewünschte Funktion oder Verbesserung.
+      placeholder: Erklären Sie Ihre Idee hier.
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Anwendungsfall
+      description: Wie würde diese Funktion Ihnen oder Ihrem Team helfen?
+      placeholder: Geben Sie ein Beispielszenario an.
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorität
+      description: Wie wichtig ist diese Funktion?
+      options:
+        - Niedrig
+        - Mittel
+        - Hoch
+      default: 1
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Verhaltenskodex
+      description: Mit dem Einreichen dieses Issues stimmen Sie unserem [Verhaltenskodex](https://example.com) zu.
+      options:
+        - label: Ich stimme zu, den Verhaltenskodex dieses Projekts einzuhalten
+          required: true
