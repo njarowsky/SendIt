@@ -42,14 +42,6 @@ body:
         - Niedrig
         - Mittel
         - Hoch
-      default: 1
+      default: 0
     validations:
       required: true
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Verhaltenskodex
-      description: Mit dem Einreichen dieses Issues stimmen Sie unserem [Verhaltenskodex](https://example.com) zu.
-      options:
-        - label: Ich stimme zu, den Verhaltenskodex dieses Projekts einzuhalten
-          required: true
