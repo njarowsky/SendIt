@@ -35,7 +35,7 @@ body:
       default: 0
     validations:
       required: true
-   - type: checkboxes
+  - type: checkboxes
     id: browsers
     attributes:
       label: Browser
