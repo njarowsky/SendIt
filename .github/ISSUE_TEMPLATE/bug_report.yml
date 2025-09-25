@@ -4,7 +4,7 @@ title: "[Bug]: "
 labels: ["bug"]
 projects: ["njarowsky/5"]
 assignees:
-  - octocat
+  - njarowsky
 body:
   - type: markdown
     attributes:
