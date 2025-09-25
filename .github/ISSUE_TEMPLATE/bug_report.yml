@@ -35,17 +35,16 @@ body:
       default: 0
     validations:
       required: true
-  - type: dropdown
+   - type: checkboxes
     id: browsers
     attributes:
       label: Browser
-      description: In welchen Browsern tritt das Problem auf?
-      multiple: true
+      description: In welchen Browsern tritt das Problem auf? (Mehrfachauswahl möglich)
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - label: Firefox
+        - label: Chrome
+        - label: Safari
+        - label: Microsoft Edge
   - type: textarea
     id: logs
     attributes:
