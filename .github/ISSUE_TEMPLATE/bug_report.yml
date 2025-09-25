@@ -1,6 +1,7 @@
 name: Bug Report
 description: Report a bug
 labels: ["bug"]
+projects: ["SendIt Tickets"]
 body:
   - type: markdown
     attributes:
