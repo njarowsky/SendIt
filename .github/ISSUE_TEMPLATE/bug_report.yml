@@ -1,47 +1,45 @@
 name: Bug Report
-description: File a bug report.
+description: Erstelle ein Bug-Ticket
 title: "[Bug]: "
 labels: ["bug"]
-projects: ["njarowsky/5"]
 assignees:
   - njarowsky
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Vielen Dank, dass Sie sich die Zeit nehmen, diesen Fehlerbericht auszufüllen!
   - type: input
     id: contact
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: Kontaktinformationen
+      description: Wie können wir Sie erreichen, falls wir weitere Informationen benötigen?
+      placeholder: z. B. email@beispiel.de
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: what_happened
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Was ist passiert?
+      description: Beschreiben Sie auch, was Sie erwartet hätten.
+      placeholder: Beschreiben Sie, was Sie sehen!
     validations:
       required: true
   - type: dropdown
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: Welche Version unserer Software verwenden Sie?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - 1.0.0 (Standard)
       default: 0
     validations:
       required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Browser
+      description: In welchen Browsern tritt das Problem auf?
       multiple: true
       options:
         - Firefox
@@ -51,14 +49,6 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Relevante Log-Ausgaben
+      description: Bitte fügen Sie relevante Log-Ausgaben oder Fehlermeldungen hier ein.
       render: shell
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
