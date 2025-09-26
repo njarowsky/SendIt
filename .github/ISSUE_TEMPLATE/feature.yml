@@ -1,7 +1,7 @@
 name: Featureanfrage
 description: Fordern Sie eine neue Funktion oder Verbesserung an.
 title: "[Feature]: "
-labels: ["feature"]
+labels: ["enhancement"]
 assignees:
   - njarowsky
 body:
